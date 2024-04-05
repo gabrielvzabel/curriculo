@@ -1,111 +1,177 @@
-<!DOCTYPE html>
-<html lang="en"> 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
     <style>
-        #body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        #foto {
-            width: 300px;
-            height: auto; 
-            border-radius: 10%;
-            margin-bottom: 20px;
-        }
-        #informações {
-            background-color: #a19e9e;
-            padding: 50px;
-            border-radius: 8px;
-            box-shadow: 0 0  10px rgba(0,0,0,0.1);
-            margin: 20px auto;
-            max-width: 900px;
-        }
-        #Formacao, #Habilidades, #experienciasPro {
-            background-color: #a19e9e;
-            padding: 50px;
-            border-radius: 8px;
-            box-shadow: 0 0  10px rgba(0,0,0,0.1);
-            margin: 20px auto;
-            max-width: 900px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        h1 {
-            margin-top: 0;
-        }
-        p {
-            color: #666;
-        }
-        ul {
-            padding: 0;
-            margin: 0;
-        }
-        li {
-            list-style-type: none;
-            margin-bottom: 10px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            text-align: center;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
 
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .section {
+        background-color: #a19e9e;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 10px auto;
+        max-width: 800px;
+      }
+
+      img {
+        width: 300px;
+        height: auto;
+        border-radius: 10%;
+        margin-bottom: 5px;
+      }
         
+      h1,
+      h2,
+      h3,
+      p {
+        color: #333;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+
+      input[type="button"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      input[type="button"]:hover {
+        background-color: #555;
+      }
+
+      .infos {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .infos > * {
+        margin: 0;
+      }
     </style>
-</body>
+  </head>
 
+  <body>
     <div class="container">
-    <img id="foto" src="https://th.bing.com/th/id/R.bcd5e92ea40bb18d46cfe627401b53c4?rik=ugnqv7aPaQRSQg&pid=ImgRaw&r=0" alt="Pancada">
-    <div id="informações">
-    <h1>Bryan "Pancada" Luna</h1>
-     <p> São Paulo, SP, Brasil </p>
-     <p> 480228982 | pancada@gmail.com</p>
-    </div>
+      <div class="section" id="informações">
+        <img
+          src="https://th.bing.com/th/id/R.bcd5e92ea40bb18d46cfe627401b53c4?rik=ugnqv7aPaQRSQg&pid=ImgRaw&r=0"
+          alt="Pancada"
+        />
+        <h1>Bryan "Pancada" Luna</h1>
+        <p>São Paulo, SP, Brasil</p>
+        <p>480228982 | pancada@gmail.com</p>
+      </div>
 
-    <div id="experienciasPro">
+      <div class="section" id="experienciasPro">
         <h2>Experiências Profissionais</h2>
         <ul>
-                <h3>Black Dragons</h3>
-                <p>Rifler | 2016 - 2020 (crossfire)</p>
-                <p>Atuei como rifler na Black Dragons conseguindo um titulo brasileiro (2016) e o segundo lugar no mundial (2019).</p>
-                <h3>B4 eSports</h3>
-                <p>Controlador | 2020-09-13 — 2021-04-14</p>
-                <p>Atuei como controlador na B4 conseguindo a classificação pro VCT 2021 e ganhei campeonatos tier 2 e 3.</p>
-                <h3>Star Horizon</h3>
-                <p>Controlador | 2021-07-03 — 2021-12-15</p>
-                <p>Atuei como controlador na Star Horizon conseguindo a classificação pro VCT 2021 e ganhei campeonatos tier 2 e 3.</p>
-                <h3>LOUD</h3>
-                <p>Controlador | 2022-02-03 — 2022-10-15</p>
-                <p>Atuei como controlador na LOUD conquistando um Champions e 2 VCT Brazil.</p>
-                <h3>Sentinels</h3>
-                <p>Controlador/Sentinela | 2022-10-15 — 2024-02-09</p>
-                <p>Atuei como controlador e sentinela da Sentinels sem grandes conquistas.</p>
+          <li>
+            <h3>Black Dragons</h3>
+            <p>Rifler | 2016 - 2020 (crossfire)</p>
+            <p>
+              Conquistas: título brasileiro (2016) e segundo lugar no mundial
+              (2019).
+            </p>
+          </li>
+          <li>
+            <h3>B4 eSports</h3>
+            <p>Controlador | 2020-09-13 — 2021-04-14</p>
+            <p>
+              Conquistas: classificação pro VCT 2021 e campeonatos tier 2 e 3.
+            </p>
+          </li>
+          <li>
+            <h3>Star Horizon</h3>
+            <p>Controlador | 2021-07-03 — 2021-12-15</p>
+            <p>
+              Conquistas: classificação pro VCT 2021 e campeonatos tier 2 e 3.
+            </p>
+          </li>
+          <li>
+            <h3>LOUD</h3>
+            <p>Controlador | 2022-02-03 — 2022-10-15</p>
+            <p>Conquistas: Champions e 2 VCT Brazil.</p>
+          </li>
+          <li>
+            <h3>Sentinels</h3>
+            <p>Controlador/Sentinela | 2022-10-15 — 2024-02-09</p>
+            <p>Sem grandes conquistas.</p>
+          </li>
         </ul>
-        </div>
-        <div id="Formacao">
-            <h2>Educação</h2>
-            <ul>
-                    <p>Ensino Médio incompleto</p>
-            </ul>
-        </div>
-        <div id="Habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <p>Inglês (bem basiquinho)</p>
-            <p>Não errar tiro</p>
-            <p>Ganhar clutch</p>
-        </ul>
+      </div>
+
+      <div class="infos">
+        <div class="section" id="Formacao">
+          <h2>Educação</h2>
+          <ul>
+            <li>Ensino Médio incompleto</li>
+            <li>Curso galo robô (SENAI)</li>
+            <li>Curso de mandarim</li>
+          </ul>
         </div>
 
-    
+        <div class="section" id="Habilidades">
+          <h2>Habilidades</h2>
+          <ul>
+            <li>Inglês (bem básico)</li>
+            <li>Não errar tiro</li>
+            <li>Ganhar clutch</li>
+          </ul>
+        </div>
 
-     
-</body>
+        <div class="section" id="Redes">
+          <h2>Redes Sociais</h2>
+          <ul>
+            <li>
+              <a href="https://twitter.com/pANcada"
+                ><input type="button" value="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                ><input type="button" value="YouTube"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.vlr.gg/player/683/pancada"
+                ><input type="button" value="VLR.gg"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://tracker.gg/valorant/profile/riot/LOUD%20pANcada%232847/overview"
+                ><input type="button" value="Tracker"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
